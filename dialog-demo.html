@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+  *{margin:0;padding:0;}
+  .doc button.btn{margin:40px auto;height:30px;line-height:30px;font-size:16px;border-radius: 3px;margin-left:10px;min-width:100px;border:none;color:#fff;font-size:14px;cursor:pointer;}
+  .doc button.open{background:#651E7E;}
+  .doc button.close{background:#DDB0EC;border:1px solid #DDB0EC;}
+  </style>
+  <link href="lib/dialog/dialog.css" rel="stylesheet"/>
+  <script src="lib/jquery-1.11.3.js"></script>
+  <script src="lib/dialog/dialog.js"></script>
+  <script>
+  $(function(){
+    $("#open").click(function(){
+      var $d = $(".dialog-demo-box");
+				$d.dialog({
+            title: 'Title',					// title
+            dragable:true,
+            html: '', 						// html template
+            width: 400,					// width
+            height: 200,				// height
+            cannelText: 'Cannel',		// cannel text
+            confirmText: 'Confirm',	// confirm text
+            showFooter:true,
+            onClose: false,				// colse callback
+            onOpen: false,				// open callback
+            onConfirm: function() { //  confirm callback required
+  						$d.dialog().close();
+  					},
+            onCannel: false,			// cannel callback
+            getContent:function(){
+              $d.find('.body-content').html('content');
+            }			// get Content callback
+				}).open();
+    });
+  });
+  </script>
+</head>
+<body>
+  <div class="doc">
+    <div class="btns">
+      <button class="open btn" id="open">Open</button>
+    </div>
+
+    <div class="dialog-demo-box" style="display:none;"></div>
+  </div>
+</body>
+</html>
