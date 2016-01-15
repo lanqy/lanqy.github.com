@@ -24,6 +24,17 @@
 </head>
 <body>
   <h1 style="text-align:center;margin:20px auto;">Device Metrics - Google Design</h1>
+  <div id="header">
+    <div id="button-info"><i class="material-icons">info</i></div>
+    <div id="sticky" class="">
+      <div class="title">Device metrics</div>
+        <div id="filterPanel" class="scrollable">
+          <div class="table" id="titlerow">
+            <div class="tr"><div class="grid-wrapper"><div class="td sort type" name="formfactor">Type</div><div class="td sort device" name="device">Device</div><div class="td sort platform" name="platform" data-sort-direction="ascend">Platform</div><div class="td screen-size" name="inscreend" data-sort-direction="descend"><span class="sort" name="inscreend">Screen dimensions</span><span class="unit" id="unit-in">in</span><span class="unit selected" id="unit-cm">cm</span></div><div class="td aspect-ratio"><span class="sort" name="screenratio" tooltip="screenratio">Aspect Ratio</span></div><div class="td screen sorted" name="dpscreenh" data-sort-direction="ascend"><span class="sort width-40 align-right" name="dpscreenw" tooltip="dpscreenw">Width</span><span class="width-20 align-center opacity-54">×</span><span class="sort" name="dpscreenh">Height</span><span class="unit selected" id="unit-dp">dp</span></div><div class="td screen"><span class="sort width-40 align-right" name="pxscreenw">Width</span><span class="width-20 align-center opacity-54">×</span><span class="sort" name="dpscreenh">Height</span><span class="unit selected" id="unit-px">px</span></div><div class="td sort density" name="density">Density</div></div></div>
+          </div>
+      </div>
+    </div>
+  </div>
 <div id="main-table" class="scrollable">
     <div class="tr" id="device-row-template">
       <div class="grid-wrapper">
