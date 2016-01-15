@@ -27,15 +27,15 @@
             confirmText: 'Confirm',	// confirm text
             showFooter:true,
             onClose: function(){	// colse callback
-              alert('you are close');
+              alert('clicked close button!');
             },
             onOpen: false,				// open callback
             onConfirm: function() { //  confirm callback required
-              alert('you are Confirm');
+              alert('clicked confirm button!');
   						$d.dialog().close();
   					},
             onCannel: function(){  	// Cannel callback
-              alert('you are Cannel');
+              alert('clicked cannel button!');
             },
             getContent:function(){ 	// get Content callback
               $d.find('.body-content').html('content');
