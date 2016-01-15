@@ -24,7 +24,9 @@
             cannelText: 'Cannel',		// cannel text
             confirmText: 'Confirm',	// confirm text
             showFooter:true,
-            onClose: false,				// colse callback
+            onClose: function(){
+              alert('close');
+            },				// colse callback
             onOpen: false,				// open callback
             onConfirm: function() { //  confirm callback required
   						$d.dialog().close();
