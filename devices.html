@@ -463,5 +463,108 @@ window.devicesData ={"feed":{"title":{"$t":"Display Resolutions (Public)","type"
         </div>
       </div>
     </div></div>
+    <div id="info-panel" data-device-type="handset" columns="4" class="">
+    <i id="button-close" class="material-icons">close</i>
+
+    <div class="shadow">
+      <div id="device-title">iPhone</div>
+      <div id="device-tabs">
+        <div id="tab-portrait" name="portrait" class="tab selected"><i class="material-icons">stay_current_portrait</i></div>
+        <div id="tab-landscape" name="landscape" class="tab"><i class="material-icons">stay_current_landscape</i></div>
+      </div>
+    </div>
+
+    <div class="scroller" id="info-panel-scroller">
+      <div id="device-preview">
+        <div id="grid" class="horizontal flexbox" style="width: 100px; height: 150px; margin-left: -50px; margin-top: -75px;">
+          <div class="gutter four"></div><div class="column four"></div>
+          <div class="gutter four"></div><div class="column four"></div>
+          <div class="gutter four"></div><div class="column four"></div>
+          <div class="gutter four"></div><div class="column four"></div>
+          <div class="gutter four"></div><div class="column eight"></div>
+          <div class="gutter eight"></div><div class="column eight"></div>
+          <div class="gutter eight"></div><div class="column eight"></div>
+          <div class="gutter eight"></div><div class="column eight"></div>
+          <div class="gutter eight"></div><div class="column twelve"></div>
+          <div class="gutter twelve"></div><div class="column twelve"></div>
+          <div class="gutter twelve"></div><div class="column twelve"></div>
+          <div class="gutter twelve"></div><div class="column twelve"></div>
+          <div class="gutter twelve"></div>
+        </div>
+      </div>
+
+      <div id="content-intro">
+        <div class="group">
+          <div class="group-title">Material metrics</div>
+            <div class="text">Select a device to view detailed information, recommended material design measurements, and values for portrait and landscape orientations.</div>
+        </div>
+      </div>
+
+      <div class="content-device">
+        <div id="metrics" class="group">
+          <div class="group-title">Material metrics</div>
+          <div class="item" tooltip="toolbarunit">
+            <div class="value" id="value-toolbar">40 dp</div>
+            <div class="subtitle">Toolbar unit</div>
+          </div>
+          <div class="item" tooltip="uidepth">
+            <div class="value" id="value-ui-depth">40 dp</div>
+            <div class="subtitle">UI depth</div>
+          </div>
+          <div class="item" tooltip="columns">
+            <div class="value" id="value-columns">4</div>
+            <div class="subtitle">Columns</div>
+          </div>
+          <div class="item" tooltip="gutter">
+            <div class="value" id="value-gutter">16 dp</div>
+            <div class="subtitle">Gutter width</div>
+          </div>
+
+          <div class="item" tooltip="sidebyside">
+            <div class="value" id="value-side-by-side">1</div>
+            <div class="subtitle">Side by side views</div>
+          </div>
+        </div>
+
+        <div class="group">
+          <div class="group-title">Ideal touch size range</div>
+          <div class="item" tooltip="touchsize">
+            <div class="value"><span id="value-sm-touch">45</span>—<span id="value-lg-touch">58 dp</span></div>
+            <div class="subtitle">7—9mm</div>
+          </div>
+        </div>
+
+        <div class="group">
+          <div class="group-title">Physical density</div>
+          <div class="item" tooltip="screenppi">
+            <div class="value" id="value-pxin">165</div>
+            <div class="subtitle">px/in</div>
+          </div>
+          <div class="item" tooltip="screendpi">
+            <div class="value" id="value-dpin">165</div>
+            <div class="subtitle">dp/in</div>
+          </div>
+          <div class="item" tooltip="viewdistance">
+            <div class="value" id="value-screen-dist">11.8"</div>
+            <div class="subtitle">Screen distance</div>
+          </div>
+          <div class="item" tooltip="degscreenw">
+            <div class="value" id="value-screen-width">9.4°</div>
+            <div class="subtitle">Angular width</div>
+          </div>
+          <div class="item" tooltip="screenppd">
+            <div class="value" id="value-screeh-ppd">34.1 pp°</div>
+            <div class="subtitle">Angular density</div>
+          </div>
+          <div class="item" tooltip="screendpa">
+            <div class="value" id="value-screen-dpa">34.1 dp°</div>
+            <div class="subtitle">Angular density</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
 </body>
 </html>
