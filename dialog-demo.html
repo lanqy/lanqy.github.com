@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   <style>
   *{margin:0;padding:0;}
+  .doc{width:860px;margin:0 auto;}
+  .doc h2{font-size: 20px;margin:20px;}
   .doc button.btn{margin:40px auto;height:30px;line-height:30px;font-size:16px;border-radius: 3px;margin-left:10px;min-width:100px;border:none;color:#fff;font-size:14px;cursor:pointer;}
   .doc button.open{background:#651E7E;}
   .doc button.close{background:#DDB0EC;border:1px solid #DDB0EC;}
@@ -24,17 +26,20 @@
             cannelText: 'Cannel',		// cannel text
             confirmText: 'Confirm',	// confirm text
             showFooter:true,
-            onClose: function(){
-              alert('close');
-            },				// colse callback
+            onClose: function(){	// colse callback
+              alert('you are close');
+            },
             onOpen: false,				// open callback
             onConfirm: function() { //  confirm callback required
+              alert('you are Confirm');
   						$d.dialog().close();
   					},
-            onCannel: false,			// cannel callback
-            getContent:function(){
+            onCannel: function(){  	// Cannel callback
+              alert('you are Cannel');
+            },
+            getContent:function(){ 	// get Content callback
               $d.find('.body-content').html('content');
-            }			// get Content callback
+            }
 				}).open();
     });
   });
@@ -42,11 +47,11 @@
 </head>
 <body>
   <div class="doc">
+    <h2>Dialog plugin demo</h2>
     <div class="btns">
       <button class="open btn" id="open">Open</button>
     </div>
-
-    <div class="dialog-demo-box" style="display:none;"></div>
   </div>
+  <div class="dialog-demo-box" style="display:none;"></div>
 </body>
 </html>
